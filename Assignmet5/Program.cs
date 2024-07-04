@@ -8,6 +8,7 @@ namespace Assignmet5
     {
         static void Main(string[] args)
         {
+            #region Assignment5 
             #region q1
             ///Passing by Value:
             ///A copy of the value is passed to the method.
@@ -115,8 +116,10 @@ namespace Assignmet5
             Console.WriteLine($"Original string: {originalString}");
             Console.WriteLine($"Modified string: {modifiedString}");
             #endregion
+            #endregion
         }
         //functions
+        #region Assignment5
         #region q1
         static void ModifyByValue(int number)
         {
@@ -239,6 +242,7 @@ namespace Assignmet5
             charArray[position] = newChar;
             return new string(charArray);
         }
+        #endregion
         #endregion
     }
 }
