@@ -10,7 +10,7 @@
 
             o1=1; // Casting [Value Type > Reference Type] Boxing
             o1 = 'A'; // Casting [Value Type -> Reference Type] Boxing
-            o1 = new Class1(); // Casting
+            o1 = new Employee(); // Casting
             #endregion
 
             #region example2
@@ -45,7 +45,20 @@
             decimal? Num01 = null;
 
             Console.WriteLine(Num01);
-            Console.WriteLine(YY); 
+            Console.WriteLine(YY);
+            #endregion
+
+            #region example4:ReferencesType
+
+            string Message = "Hi";
+            Message = null; // Valid With Warning
+            Message =null!; // Null Forgiveness Operator
+
+            string? Message02 = null; // Valid Without Warning
+
+            Console.WriteLine(Message02);
+            Console.WriteLine(Message);
+
             #endregion
         }
     }
